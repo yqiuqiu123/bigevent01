@@ -28,7 +28,7 @@ function getUserInfo() {
     //     Authorization: localStorage.getItem('token') || ''
     //   },
       success: function(res) {
-        // console.log(res);
+        console.log(res);
         //判断状态
         if(res.status !== 0){
             return layui.layer.msg(res.message)
